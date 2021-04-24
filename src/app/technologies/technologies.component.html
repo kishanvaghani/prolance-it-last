@@ -1,0 +1,106 @@
+<div>
+    <div class="page-banner-bg banner-bg d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-banner-content">
+                        <h1>Technologies</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <section class="section-space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <owl-carousel-o [options]="customOptions">
+                            <ng-template carouselSlide *ngFor="let service of serviceData let i = index">
+                                <div class="services-item ">
+                                    <a class="nav-link" (click)="tabClick(i)" [ngClass]="{active:tabId===i }">
+                                        <div class="circle-icon mb-5 d-flex justify-content-center align-items-center">
+                                            <span>
+                                                <img src="{{service.img}}" alt=".NET">
+                                            </span>
+                                        </div>
+                                        <h3 class="icon-title">{{service.title}}</h3>
+                                    </a>
+                                </div>
+                            </ng-template>
+                        </owl-carousel-o>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class=" services-tab-content position-relative overflow-hidden wow fadeInUp"
+        *ngFor="let tab of tabData let i= index">
+        <div class="tab-pane fade show " *ngIf="tabId===i">
+            <section class="section-space pt-0">
+                {{tabId}}
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <img src="../../assets/technologies/{{tab.img}}" class="img-fluid" alt=".NET">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="services-nameinfo mt-4 mt-lg-0">
+                                <h2>{{tab.title}}</h2>
+                                <p>{{tab.paraGraph.p1}}</p>
+                                <p>{{tab.paraGraph.p2}}</p>
+                                <p>{{tab.paraGraph.p3}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-space portfolio-section position-relative pt-5 pb-5" *ngIf="tab.portFolia">
+                <div class="pattern-part pattern-2" style="top: 35%;"></div>
+                <div class="container">
+                    <div class="section-title text-center wow fadeInUp" data-wow-duration="1s"
+                        style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+                        <h2>Portfolio</h2>
+                    </div>
+                    <div class="row align-items-center portfolio-row">
+                        <div class="col-12 col-md-6 col-lg-4 wow fadeInUp" *ngIf="tab.portFolia.pImg"
+                            data-wow-duration="0.8s"
+                            style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
+                            <div class="portfolio-item">
+                                <div class="portfolio-itemImg">
+                                    <img src="../../assets/technologies/{{tab.portFolia.pImg}}" class="img-fluid"
+                                        alt="">
+                                </div>
+                                <h4 class="services-title">{{tab.portFolia.pTitle}}</h4>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 wow fadeInUp" *ngIf="tab.portFolia.pImg1"
+                            data-wow-duration="1.2s"
+                            style="visibility: visible; animation-duration: 1.2s; animation-name: fadeInUp;">
+                            <div class="portfolio-item">
+                                <div class="portfolio-itemImg">
+                                    <img src="../../assets/technologies/{{tab.portFolia.pImg1}}" class="img-fluid"
+                                        alt="">
+                                </div>
+                                <h4 class="services-title">{{tab.portFolia.pTitle1}}</h4>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 wow fadeInUp" *ngIf="tab.portFolia.pImg2"
+                            data-wow-duration="0.8s"
+                            style="visibility: visible; animation-duration: 0.8s; animation-name: fadeInUp;">
+                            <div class="portfolio-item">
+                                <div class="portfolio-itemImg">
+                                    <img src="../../assets/technologies/{{tab.portFolia.pImg2}}" class="img-fluid"
+                                        alt="">
+                                </div>
+                                <h4 class="services-title">{{tab.portFolia.pTitle2}}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <app-itservice></app-itservice>
+</div>

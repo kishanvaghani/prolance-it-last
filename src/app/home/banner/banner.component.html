@@ -1,0 +1,783 @@
+<div>
+    <div class="home-banner my-5 position-relative">
+        <div class="pattern-part pattern-1">
+        </div>
+        <div class="social-icon d-none d-lg-block">
+            <ul class="list-unstyled">
+                <li><a href="javascript:;" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="javascript:;" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="javascript:;" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="javascript:;" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="javascript:;" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="container overflow-hidden">
+            <div class="row align-items-center">
+                <div class="col-sm-6 p-lg-5" data-aos="fade-up">
+                    <div class="text home-banner-content mb-5 ml-lg-4 ">
+                        <h1>
+                            <span>Professionals</span>
+                            for your innovation
+                        </h1>
+                        <p></p>
+                        <a class="theme-btn" routerLink="contact-us">Contact us now</a>
+                    </div>
+                </div>
+                <div class="col-sm-6" data-aos="fade-up">
+                    <div class="image mt-5">
+                        <img class="image-fluid" src="../../../assets/home-banner-img.svg" alt="LLL" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="software Developer process" data-aos="fade-up">
+        <div class="curve-bg" style="bottom:-2px"><img src="../../../assets/curve-1.svg" class="img-fluid" alt="">
+        </div>
+        <section class="position-relative bg-same">
+            <div class="pattern pattern-2"></div>
+            <div class="container">
+                <div class="section-title text-center" data-aos="fade-up" data-aos-duration="1000">
+                    <h2>We
+                        <span class="orange">Simplify</span>
+                        Software Development
+                        <span class="orange">Process</span>
+                    </h2>
+                </div>
+                <div class="row overflow-hidden">
+                    <div class=" col-md-6 col-lg-3 my-5 " *ngFor="let data of collection">
+                        <div class="step " data-aos="fade-up" data-aos-duration="1000">
+                            <div class="process-step ">
+                                <div class="circle text-center m-auto m-sm-0 d-flex justify-content-center align-items-center">
+                                    <span>
+                                        <img src="{{data.url}}" />
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="mt-4 title text-center text-sm-start">
+                                <h3 class="icon-title">{{data.title}}</h3>
+                                <p>"{{data.description}}"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pattern-3">
+                <div class="pattern-part-3 d-none d-lg-block"></div>
+            </div>
+        </section>
+    </div>
+    <div>
+        <img src="../../../assets/curve-2.svg" class="img-fluid" alt />
+    </div>
+    <section class="section-title overflow-hidden">
+        <div class="container">
+            <div class="text-center my-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <h2>
+                    Our Core
+                    <span class="orange">Services</span>
+                </h2>
+            </div>
+            <div></div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mt" *ngFor="let item of services" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                    <div class="service-block">
+                        <div class="circle-icon mb-5 d-flex justify-content-center align-items-center">
+                            <span>
+                                <img src="{{item.url}}" />
+                            </span>
+                        </div>
+                        <h3 class="icon-title">{{item.title}}</h3>
+                        <p>{{item.description}}</p>
+                        <a href="#" class="readmore-btn orange">Read More..
+                            <i class="fas fa-long-arrow-alt-right align-middle"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" my-5">
+        <div class="curve-bg" style="bottom:-2px" data-aos="fade-up" data-aos-anchor-placement="center-bottom"><img src="../../../assets/curve-1.svg" class="img-fluid" alt="">
+        </div>
+        <div class="pattern-4 bg-same"></div>
+        <div class=" bg-same" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="container">
+                <div class="text-center section-title">
+                    <h2>
+                        Technologies We
+                        <span class="orange">Work</span>
+                        With
+                    </h2>
+                </div>
+                <div class="row work my-5">
+                    <div class="col-lg-6">
+                        <div class="img-section" data-aos="fade-up">
+                            <img class="img-fluid image-fluid" src="../../../assets/graphic_tech.png" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 my-5">
+                        <div class="work-tab">
+                            <nav data-aos="fade-up">
+                                <div class="nav nav-tabs justify-content-between" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active " id="nav-home-tab" data-toggle="tab" href="#nav-front-end" role="tab" aria-controls="nav-front-end" aria-selected="true">Front-end</a>
+                                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-back-end" role="tab" aria-controls="nav-back-end" aria-selected="false">Back-end</a>
+                                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-data-storage" role="tab" aria-controls="nav-data-storage" aria-selected="false">Data Storage</a>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade active show" id="nav-front-end" role="tabpanel" aria-labelledby="nav-home-tab">
+                                    <ul data-aos="fade-up" class="work-icon-list list-unstyled">
+                                        <li>
+                                            <span><img src="../../../assets/dot_net.svg" class="img-fluid" alt=".NET"></span>
+                                            <p>.NET</p>
+                                        </li>
+                                        <li>
+                                            <span><img src="../../../assets/angular.svg" class="img-fluid" alt="Angular"></span>
+                                            <p>Angular</p>
+                                        </li>
+                                        <li>
+                                            <span><img src="../../../assets/vue-js.svg" class="img-fluid" alt="Vue JS"></span>
+                                            <p>Vue JS</p>
+                                        </li>
+                                        <li>
+                                            <span><img src="../../../assets/react-native.svg" class="img-fluid" alt=""></span>
+                                            <p>React JS</p>
+                                        </li>
+                                        <li>
+                                            <span><img src="../../../assets/bootstrap.svg" class="img-fluid" alt=""></span>
+                                            <p>Bootstrap</p>
+                                        </li>
+
+                                        <!-- <li>
+                                            <span><img src="../../../assets/iOS.svg" class="img-fluid" alt=""></span>
+                                            <p>iOS</p>
+                                        </li> -->
+                                        <li>
+                                            <span><img src="../../../assets/angular-material.svg" class="img-fluid" alt="Angular Material"></span>
+                                            <p>Angular Material</p>
+                                        </li>
+                                        <li>
+                                            <span><img src="../../../assets/php.svg" class="img-fluid" alt=""></span>
+                                            <p>PHP</p>
+                                        </li>
+                                        <li>
+                                            <span><img src="../../../assets/adobe-xd.png" class="img-fluid" alt="XD">
+                                            </span>
+                                            <p>Adobe XD</p>
+                                        </li>
+                                        <!-- <li>
+                                            <span><img src="../../../assets/flutter.svg" class="img-fluid" alt=""></span>
+                                            <p>Flutter</p>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="nav-back-end" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                    <ul data-aos="fade-up" class="work-icon-list list-unstyled">
+                                        <li>
+                                            <span><img src="../../../assets/dot_net.svg" class="img-fluid" alt=".NET"></span>
+                                            <p>.NET</p>
+                                        </li>
+                                        <li>
+                                            <span><img src="../../../assets/node_js.svg" class="img-fluid" alt=""></span>
+                                            <p>Node JS</p>
+                                        </li>
+                                        <li>
+                                            <span><img src="../../../assets/python.svg" class="img-fluid" alt=""></span>
+                                            <p>Python</p>
+                                        </li>
+                                        <li>
+                                            <span><img src="../../../assets/django.svg" class="img-fluid" alt=""></span>
+                                            <p>django</p>
+                                        </li>
+                                        <li>
+                                            <span><img src="../../../assets/php.svg" class="img-fluid" alt=""></span>
+                                            <p>PHP</p>
+                                        </li>
+                                        <li>
+                                            <span><img src="../../../assets/laravel.svg" class="img-fluid" alt=""></span>
+                                            <p>Laravel</p>
+                                        </li>
+                                        <li>
+                                            <span><img src="../../../assets/websocket.svg" class="img-fluid" alt=""></span>
+                                            <p>websocket</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="nav-data-storage" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                    <ul data-aos="fade-up" class="work-icon-list list-unstyled">
+                                        <li>
+                                            <span><img src="../../../assets/ms-sql.svg" class="img-fluid" alt=""></span>
+                                            <p>MS SQL</p>
+                                        </li>
+                                        <li>
+                                            <span><img src="../../../assets/my-sql.svg" class="img-fluid" alt=""></span>
+                                            <p>My SQL</p>
+                                        </li>
+                                        <li>
+                                            <span><img src="../../../assets/postgreSQL.svg" class="img-fluid" alt=""></span>
+                                            <p>PostgreSQL</p>
+                                        </li>
+                                        <li>
+                                            <span><img src="../../../assets/mongo-db.svg" class="img-fluid" alt=""></span>
+                                            <p>Mongo DB</p>
+                                        </li>
+                                        <li>
+                                            <span><img src="../../../assets/sqlite.svg" class="img-fluid" alt=""></span>
+                                            <p>SQLite</p>
+                                        </li>
+                                        <li>
+                                            <span><img src="../../../assets/firebase.svg" class="img-fluid" alt=""></span>
+                                            <p>Firebase</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Diamond Nexus -->
+    <section class="diamond-nexus overflow-hidden">
+        <div class="container mb-5 ">
+            <div class="header" data-aos="fade-up">
+                <div class="animation text-center section-title my-5">
+                    <h4 class="section-title">Our Product</h4>
+                    <h2>Diamond
+                        <span class="orange">Nexus</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-6 col-xl-6 mb-5">
+                    <div class="diamond-icon">
+                        <img src="../../../assets/diamond.svg" />
+                    </div>
+                    <div class="section-title sec-title" data-aos="fade-up">
+                        <h2>The Next Generation of
+                            <span class="orange">Diamond</span>
+                            Software.
+                        </h2>
+                        <div class="text-black-50">
+                            <p>We are leading the Diamond industry's IT movement
+                                into tomorrow‘s value-enabled world. No other IT
+                                partner integrates your information so you can
+                                take action across all your products, apps and
+                                even across the website in real-time sync.
+                                Imagine the value of enabling multiple product
+                                integrations –
+                                without having to rip-and-replace or rework any
+                                of your systems.
+                            </p>
+                            <br>
+                            <p>We‘re pioneering comprehensive diamond process
+                                solutions and integrating across the different
+                                processes.
+                                We partner with you to enable smarter diamond
+                                process delivery. We also work with CMS and CRM
+                                systems.
+                            </p>
+                            <br>
+                            <p>Take a closer look at ProLance IT. Experience how
+                                our Manufacturing, Selling (Certified + Loose),
+                                Financial Account, Website and Application
+                                solutions can give you connected information and
+                                insights like never before.
+                                It‘s everything you need to confidently meet
+                                your clinical, operational and business goals.
+                            </p>
+                        </div>
+                        <a href="our-product.html" class="theme-btn text-uppercase mt-4">Know more</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-5 offset-xl-1 text-center">
+                    <div data-aos="fade-up">
+                        <img class="img-fluid" src="../../../assets/diamond.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-space img business-contact text-center d-flex justify-content-center align-items-center">
+        <div class="container" data-aos="fade-up">
+            <h6>Are you ready for a better,</h6>
+            <h2>More productive Business?</h2>
+            <a href="contact-us.html" class="theme-btn bg-theme-yellow-btn">Contact Us Now</a>
+        </div>
+        <div id="jarallax-container-0">
+            <div>
+            </div>
+        </div>
+    </section>
+    <!-- Testonomial... -->
+    <section class="testo position-relative overflow-hidden">
+        <div class="container mb-5">
+            <div class="section-title text-center my-5" data-aos="fade-up">
+                <h6>Testimonial</h6>
+                <h2>What do people praise
+                    <br>
+                    about
+                    <span class="orange"> our excellence!</span>
+                </h2>
+            </div>
+            <!-- <div style="width: 840px; height: 500px; text-align:center;margin:0; padding:0;">
+
+                <ng-image-slider #nav
+                  [images]="imageObject"
+                  [infinite]="false"
+                  [autoSlide]="1"
+                  [imageSize]="{width: '25%', height: 200}"
+                  slideImage="1">
+                </ng-image-slider>
+              </div> -->
+            <!-- <div class="carousel">
+                <div class="owl-item" style="width: 445px; margin-right: 40px;">
+                    <div class="testimonial-item" style="height: 353px;">
+                        <div
+                            class="testimonial-header d-flex align-items-center pr-3">
+                            <div class="client-user">
+                                <img src="../../../assets/testo/piyushmehra.png"
+                                    alt="">
+                            </div>
+                            <div class="client-name ml-4">
+                                <h2>Piyush Mehra</h2>
+                                <h4>Diamond Portal</h4>
+                            </div>
+                        </div>
+                        <p>Diamond Nexus is a perfect software for our
+                            organisation, and it has everything that wee need.
+                            The best part is the on-time service and world class
+                            service that we ever had before. Most most
+                            recommended!!!</p>
+                    </div>
+                </div>
+
+                <div class="owl-item" style="width: 445px; margin-right: 40px;">
+                    <div class="testimonial-item" style="height: 353px;">
+                        <div
+                            class="testimonial-header d-flex align-items-center pr-3">
+                            <div class="client-user">
+                                <img src="../../../assets/testo/piyushmehra.png"
+                                    alt="">
+                            </div>
+                            <div class="client-name ml-4">
+                                <h2>Piyush Mehra</h2>
+                                <h4>Diamond Portal</h4>
+                            </div>
+                        </div>
+                        <p>Diamond Nexus is a perfect software for our
+                            organisation, and it has everything that wee need.
+                            The best part is the on-time service and world class
+                            service that we ever had before. Most most
+                            recommended!!!</p>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div id="testimonial" class="owl-testimonial owl-carousel wow fadeInRight owl-loaded owl-drag" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: fadeInRight;">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage animation-slider">
+                        <div class="owl-item">
+                            <div class="testimonial-item" style="height: 353px;">
+                                <div class="testimonial-header d-flex align-items-center pr-3">
+                                    <div class="client-user">
+                                        <img src="../../../assets/testo/yashwantray.png" alt="">
+                                    </div>
+                                    <div class="client-name ml-4">
+                                        <h2>Yashwant Ray</h2>
+                                        <h4>Diamond Portal</h4>
+                                    </div>
+                                </div>
+                                <p>Just one word - UNBELIEVABLY AWESOME! Don't
+                                    think for twice, just go for it and you
+                                    never regret it for sure.</p>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="testimonial-item" style="height: 353px;">
+                                <div class="testimonial-header d-flex align-items-center pr-3">
+                                    <div class="client-user">
+                                        <img src="../../../assets/testo/johnmedison.png" alt="Logo">
+                                    </div>
+                                    <div class="client-name ml-4">
+                                        <h2>John Madison</h2>
+                                        <h4>Diamond Portal</h4>
+                                    </div>
+                                </div>
+                                <p>Diamond Nexus is a product that puts
+                                    customers first. They support customer
+                                    needs. It perfectly do justice to its tag
+                                    line "We build satisfaction, not just a
+                                    product!"</p>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="testimonial-item" style="height: 353px;">
+                                <div class="testimonial-header d-flex align-items-center pr-3">
+                                    <div class="client-user">
+                                        <img src="../../../assets/testo/manohar kumar.png" alt="">
+                                    </div>
+                                    <div class="client-name ml-4">
+                                        <h2>Manohar Kumar</h2>
+                                        <h4>Diamond Portal</h4>
+                                    </div>
+                                </div>
+                                <p>Diamond Nexus is a wonderful product to have
+                                    for the diamond company. The majority of
+                                    people who work here love the software.
+                                    There are many people here that have 10 plus
+                                    years in already and they fill the best
+                                    software till date they have used. I believe
+                                    with the seriously high cost of living now
+                                    that we are just not paid high enough
+                                    especially if you are a single individual.
+                                    The cost of living just keeps going up and
+                                    up and up and this product worth everything.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="testimonial-item" style="height: 353px;">
+                                <div class="testimonial-header d-flex align-items-center pr-3">
+                                    <div class="client-user">
+                                        <img src="../../../assets/testo/piyushmehra.png" alt="">
+                                    </div>
+                                    <div class="client-name ml-4">
+                                        <h2>Piyush Mehra</h2>
+                                        <h4>Diamond Portal</h4>
+                                    </div>
+                                </div>
+                                <p>Diamond Nexus is a perfect software for our
+                                    organisation, and it has everything that wee
+                                    need. The best part is the on-time service
+                                    and world class service that we ever had
+                                    before. Most most recommended!!!</p>
+                            </div>
+                        </div>
+                        <div class="owl-item ">
+                            <div class="testimonial-item" style="height: 353px;">
+                                <div class="testimonial-header d-flex align-items-center pr-3">
+                                    <div class="client-user">
+                                        <img src="../../../assets/testo/manohar kumar.png" alt="">
+                                    </div>
+                                    <div class="client-name ml-4">
+                                        <h2>Manohar Kumar</h2>
+                                        <h4>Diamond Portal</h4>
+                                    </div>
+                                </div>
+                                <p>Diamond Nexus is a wonderful product to have
+                                    for the diamond company. The majority of
+                                    people who work here love the software.
+                                    There are many people here that have 10 plus
+                                    years in already and they fill the best
+                                    software till date they have used. I believe
+                                    with the seriously high cost of living now
+                                    that we are just not paid high enough
+                                    especially if you are a single individual.
+                                    The cost of living just keeps going up and
+                                    up and up and this product worth everything.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="testimonial-item" style="height: 353px;">
+                                <div class="testimonial-header d-flex align-items-center pr-3">
+                                    <div class="client-user">
+                                        <img src="../../../assets/testo/johnmedison.png" alt="Logo">
+                                    </div>
+                                    <div class="client-name ml-4">
+                                        <h2>John Madison</h2>
+                                        <h4>Diamond Portal</h4>
+                                    </div>
+                                </div>
+                                <p>Diamond Nexus is a product that puts
+                                    customers first. They support customer
+                                    needs. It perfectly do justice to its tag
+                                    line "We build satisfaction, not just a
+                                    product!"</p>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 685px; margin-right: 40px;">
+                            <div class="testimonial-item" style="height: 353px;">
+                                <div class="testimonial-header d-flex align-items-center pr-3">
+                                    <div class="client-user">
+                                        <img src="../../../assets/testo/piyushmehra.png" alt="">
+                                    </div>
+                                    <div class="client-name ml-4">
+                                        <h2>Piyush Mehra</h2>
+                                        <h4>Diamond Portal</h4>
+                                    </div>
+                                </div>
+                                <p>Diamond Nexus is a perfect software for our
+                                    organisation, and it has everything that wee
+                                    need. The best part is the on-time service
+                                    and world class service that we ever had
+                                    before. Most most recommended!!!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide>
+                    <div class="testimonial-item ">
+                        <div class="testimonial-header d-flex align-items-center pr-3">
+                            <div class="client-user">
+                                <img src="../../../assets/testo/johnmedison.png" alt="Logo">
+                            </div>
+                            <div class="client-name ml-4">
+                                <h2>John Madison</h2>
+                                <h4>Diamond Portal</h4>
+                            </div>
+                        </div>
+                        <p>Diamond Nexus is a product that puts
+                            customers first. They support customer
+                            needs. It perfectly do justice to its tag
+                            line "We build satisfaction, not just a
+                            product!"</p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-item ">
+                        <div class="testimonial-header d-flex align-items-center pr-3">
+                            <div class="client-user">
+                                <img src="../../../assets/testo/piyushmehra.png" alt="">
+                            </div>
+                            <div class="client-name ml-4">
+                                <h2>Piyush Mehra</h2>
+                                <h4>Diamond Portal</h4>
+                            </div>
+                        </div>
+                        <p>Diamond Nexus is a perfect software for our
+                            organisation, and it has everything that wee
+                            need. The best part is the on-time service
+                            and world class service that we ever had
+                            before. Most most recommended!!!</p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-item ">
+                        <div class="testimonial-header d-flex align-items-center pr-3">
+                            <div class="client-user">
+                                <img src="../../../assets/testo/manohar kumar.png" alt="">
+                            </div>
+                            <div class="client-name ml-4">
+                                <h2>Manohar Kumar</h2>
+                                <h4>Diamond Portal</h4>
+                            </div>
+                        </div>
+                        <p>Diamond Nexus is a wonderful product to have
+                            for the diamond company. The majority of
+                            people who work here love the software.
+                            There are many people here that have 10 plus
+                            years in already and they fill the best
+                            software till date they have used. I believe
+                            with the seriously high cost of living now
+                            that we are just not paid high enough
+                            especially if you are a single individual.
+                            The cost of living just keeps going up and
+                            up and up and this product worth everything.
+                        </p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-item ">
+                        <div class="testimonial-header d-flex align-items-center pr-3">
+                            <div class="client-user">
+                                <img src="../../../assets/testo/yashwantray.png" alt="">
+                            </div>
+                            <div class="client-name ml-4">
+                                <h2>yashwant ray</h2>
+                                <h4>Diamond Portal</h4>
+                            </div>
+                        </div>
+                        <p>Diamond Nexus is a perfect software for our
+                            organisation, and it has everything that wee
+                            need. The best part is the on-time service
+                            and world class service that we ever had
+                            before. Most most recommended!!!</p>
+                    </div>
+                </ng-template>
+
+            </owl-carousel-o>
+        </div>
+    </section>
+    <!-- <footer>
+        <div class="footer-bottom" data-jarallax="{&quot;speed&quot;: 0.3}" style="background-image: none; z-index: 0; background-attachment: scroll; background-size: auto;" data-jarallax-original-styles="background-image: url('assets/images/footer-bg.png')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xl-4">
+                        <div class="footer-col mb-5 mb-xl-0">
+                            <div class="logo-part">
+                                <a href="index.html" class="footer-logo mb-5">
+                                    <img src="assets/images/logo_footer.svg" class="img-fluid" alt="">
+                                </a>
+                                <p class="text-white">We are leading the Diamond industry's IT movement into tomorrow‘s value-enabled world. We develop full ERP system for Diamond industry, named as Diamond Nexus. We also make mobile apps, web apps and system based on custom requirement.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 offset-xl-1">
+                        <div class="footer-col mb-4">
+                            <h2 class="footer-title">Quick Links</h2>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="footer-menu">
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="technologies.html">Technologies</a></li>
+                                        <li><a href="testimonials.html">Testimonials</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="footer-menu">
+                                        <li><a href="about-us.html">About Us </a></li>
+                                        <li><a href="hiring.html">Hiring</a></li>
+                                        <li><a href="our-product.html">Our Product</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 offset-xl-1">
+                        <div class="footer-col">
+                            <h2 class="footer-title">Contact Us</h2>
+                            <ul class="footer-info">
+                               
+                                <li>
+                                    <a href="mailto:it.prolance@gmail.com">
+                                        <span><img src="assets/images/email.svg" alt=""></span> 
+                                        it.prolance@gmail.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span><img src="assets/images/pin.svg" alt=""></span> 
+                                        Jay Shree Building, 2nd Floor, 34,35,36 Nandeshwari Society, Nr. Vasant Bhikha ni Wadi, L.H. Road, Surat, Gujarat 395006
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="footer-social-icon d-flex align-items-center mt-4">
+                                <li><a href="javascript:;"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="javascript:;"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="javascript:;"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="javascript:;"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="javascript:;"><i class="fab fa-google-plus-g"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div id="jarallax-container-1" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -100;"><div style="background-position: 50% 50%; background-size: 100%; background-repeat: no-repeat; background-image: url(&quot;https://prolanceit.in/assets/images/footer-bg.png&quot;); position: fixed; top: 0px; left: 0px; width: 1519.2px; height: 1013.59px; overflow: hidden; pointer-events: none; margin-left: 0px; margin-top: -308.796px; visibility: visible; transform: translateY(40.6538px) translateZ(0px);"></div></div></div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p class="text-white text-center">Copyright © 2020 ProLance IT</p>
+            </div>
+        </div>
+    </footer> -->
+
+    <!-- <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+            <div class="testimonial-item" style="height: 353px;">
+                <div class="testimonial-header d-flex align-items-center pr-3">
+                    <div class="client-user">
+                        <img src="../../../assets/testo/johnmedison.png" alt="Logo">
+                    </div>
+                    <div class="client-name ml-4">
+                        <h2>John Madison</h2>
+                        <h4>Diamond Portal</h4>
+                    </div>
+                </div>
+                <p>Diamond Nexus is a product that puts
+                    customers first. They support customer
+                    needs. It perfectly do justice to its tag
+                    line "We build satisfaction, not just a
+                    product!"</p>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="testimonial-item" style="height: 353px;">
+                <div class="testimonial-header d-flex align-items-center pr-3">
+                    <div class="client-user">
+                        <img src="../../../assets/testo/piyushmehra.png" alt="">
+                    </div>
+                    <div class="client-name ml-4">
+                        <h2>Piyush Mehra</h2>
+                        <h4>Diamond Portal</h4>
+                    </div>
+                </div>
+                <p>Diamond Nexus is a perfect software for our
+                    organisation, and it has everything that wee
+                    need. The best part is the on-time service
+                    and world class service that we ever had
+                    before. Most most recommended!!!</p>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="testimonial-item" style="height: 353px;">
+                <div class="testimonial-header d-flex align-items-center pr-3">
+                    <div class="client-user">
+                        <img src="../../../assets/testo/manohar kumar.png" alt="">
+                    </div>
+                    <div class="client-name ml-4">
+                        <h2>Manohar Kumar</h2>
+                        <h4>Diamond Portal</h4>
+                    </div>
+                </div>
+                <p>Diamond Nexus is a wonderful product to have
+                    for the diamond company. The majority of
+                    people who work here love the software.
+                    There are many people here that have 10 plus
+                    years in already and they fill the best
+                    software till date they have used. I believe
+                    with the seriously high cost of living now
+                    that we are just not paid high enough
+                    especially if you are a single individual.
+                    The cost of living just keeps going up and
+                    up and up and this product worth everything.
+                </p>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="owl-item">
+                <div class="testimonial-item" style="height: 353px;">
+                    <div class="testimonial-header d-flex align-items-center pr-3">
+                        <div class="client-user">
+                            <img src="../../../assets/testo/yashwantray.png" alt="">
+                        </div>
+                        <div class="client-name ml-4">
+                            <h2>Yashwant Ray</h2>
+                            <h4>Diamond Portal</h4>
+                        </div>
+                    </div>
+                    <p>Just one word - UNBELIEVABLY AWESOME! Don't
+                        think for twice, just go for it and you
+                        never regret it for sure.</p>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="testimonial-item" style="height: 353px;">
+                <div class="testimonial-header d-flex align-items-center pr-3">
+                    <div class="client-user">
+                        <img src="../../../assets/testo/piyushmehra.png" alt="">
+                    </div>
+                    <div class="client-name ml-4">
+                        <h2>Piyush Mehra</h2>
+                        <h4>Diamond Portal</h4>
+                    </div>
+                </div>
+                <p>Diamond Nexus is a perfect software for our
+                    organisation, and it has everything that wee
+                    need. The best part is the on-time service
+                    and world class service that we ever had
+                    before. Most most recommended!!!</p>
+            </div>
+        </ng-template>
+    </owl-carousel-o> -->
+</div>

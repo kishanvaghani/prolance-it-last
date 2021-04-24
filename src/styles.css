@@ -1,1 +1,179 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+@media (min-width: 1400px){
+    .container {
+        max-width: 1440px !important;
+     }
+ }
+ .page-banner-bg {
+    min-height: 400px;
+    position: relative;
+    
+}
+.banner-bg {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 350px;
+}
+.page-banner-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.page-banner-content h1 {
+    font-size: 44px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.page-banner-content h1 {
+    font-size: 44px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.page-banner-content .breadcrumb {
+    background: none;
+    padding: 0;
+    justify-content: center;
+}
+.page-banner-content .breadcrumb li {
+    color: #FE9801 !important;
+}
+a {
+    color: #FE9801;
+    text-decoration: none;
+}
+.page-banner-content .breadcrumb-item+.breadcrumb-item::before {
+    color: #FE9801;
+    content: ">";
+    vertical-align: middle;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: "/";
+}
+.section-space {
+    padding: 70px 0;
+}
+.section-title {
+    margin-bottom: 110px;
+}
+.services-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #14406D;
+}
+.section-title h2 {
+    font-size: 40px;
+    color: #14406D;
+    font-weight: 600;
+}
+.section-title h2 span {
+    display: inline-block;
+    color: #FE9801;
+}
+.services-item .nav-link:hover .icon-title, .services-item .nav-link.active .icon-title {
+    color: #FE9801;
+}
+.services-item .icon-title {
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.icon-title {
+    font-size: 20px;
+    color: #14406D;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.services-item .icon-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    
+    bottom: 0;
+    background-color: #FE9801;
+    height: 1px;
+    width: 0%;
+}
+.services-nameinfo h2 {
+    font-size: 34px;
+    font-weight: 600;
+    color: #14406D;
+    margin-bottom: 20px;
+}
+.services-block, .readmore-btn i, .nav-bar li a::before, .services-item .icon-title, .services-item .icon-title::before, .img-fluid, .work-icon-list li {
+    transition: all 0.3s ease-in-out;
+}
+.services-item .nav-link:hover .icon-title::before, .services-item .nav-link.active .icon-title::before {
+    width: 75%;
+}
+.portfolio-item {
+    background: #FFFFFF;
+    border-radius: 0px 48px;
+    box-shadow: 0px 8px 16px #0000001a;
+}
+.portfolio-itemImg img, .industries-boxImg img {
+    border-radius: 0px 48px 0px 0;
+    width: 100%;
+}
+.portfolio-item h4 {
+    padding: 25px;
+}
+.circle-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #FFF0D9;
+    position: relative;
+    border-radius: 50%;
+}
+
+.services-nameinfo h2 {
+    font-size: 34px;
+    font-weight: 600;
+    color: #14406D;
+    margin-bottom: 20px;
+}
+.services-nameinfo p {
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6C757D;
+}
+.services-listing .owl-theme .owl-dots, .owl-theme .owl-nav{
+    position: absolute;
+    top: -55px;
+    right: 20px;
+}
+ .owl-prev , .owl-next {
+    width: 35px;
+    height: 35px;
+    font-size: 18px !important;
+    background: #14406d !important;
+    border-radius: 11px !important;
+    color: #fff;
+    margin: 0 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+/* .owl-theme .owl-nav > .owl-next {
+    width: 35px;
+    height: 35px;
+    background: #14406d !important;
+    border-radius: 14px;
+    color: #fff;
+    margin: 0 5px;
+    outline: none;
+    transition: all 0.3s ease;
+} */
+/* .fa-chevron-right:before {
+    content: "\f054";
+} */

@@ -1,0 +1,183 @@
+<div class="page-banner-bg banner-bg d-flex justify-content-center align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="page-banner-content">
+                    <h1>Now Hiring</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mt-3">
+                            <li class="breadcrumb-item"><a href="#">Company</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Now Hiring</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-content">
+    <section class="section-space">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="services-listing owl-carousel owl-loaded owl-drag">
+
+                        <!-- <div class="owl-stage-outer">
+                            <div class="owl-stage"
+                                style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 237px;">
+                                <div class="owl-item active" style="width: 221.25px; margin-right: 15px;">
+                                    <div class="services-item">
+                                        <a class="nav-item nav-link active" id="dot-net-developer-tab"
+                                            href="javascript:;">
+                                            <div class="circle-icon mb-5">
+                                                <span><img src="../../../assets/angular.svg" alt="Angularz"></span>
+                                            </div>
+                                            <h3 class="icon-title">Angular Developer <span
+                                                    class="hiring-openings my-2">3 Openings</span></h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <owl-carousel-o [options]="customOptions">
+                            <ng-template carouselSlide *ngFor="let service of serviceData let i = index">
+                                <div class="services-item ">
+                                    <a class="nav-link" (click)="tabClick(i)" [ngClass]="{active:tabId===i }">
+                                        <div class="circle-icon mb-5 d-flex justify-content-center align-items-center">
+                                            <span>
+                                                <img src="{{service.img}}" alt=".NET">
+                                            </span>
+                                        </div>
+                                        <h3 class="icon-title">
+                                            {{service.position}}
+                                            <span class="hiring-openings my-2">
+                                                3 Openings
+                                            </span>
+                                        </h3>
+                                    </a>
+                                </div>
+                            </ng-template>
+                        </owl-carousel-o>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class=" services-tab-content position-relative overflow-hidden wow fadeInUp" *ngFor="let tab of tabData let i= index">
+        <div class="tab-pane fade show " *ngIf="tabId===i"  >
+            <section class="section-space pt-0">
+                <div class="container">
+                    <div class="row flex-row-reverse">
+                        <div class="col-lg-6">
+                            <img src="../../../assets/programming-amico.svg" class="img-fluid" alt="Programming Amico">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="services-nameinfo mt-4 mt-lg-0">
+                                <h2>{{tab.title}}</h2>
+                                <p class="font-weight-normal">We have urgent and exciting opening for Angular 7+ and Bootstrap 4 Developer in
+                                    Surat, Gujarat, India. </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="hiring-list mb-5">
+                                        <h3>3</h3>
+                                        <p>Openings</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="hiring-list mb-5">
+                                        <h3>1+</h3>
+                                        <p>Years of Experience</p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="hiring-list mb-5">
+                                        <h3>Key Skills</h3>
+                                        <p>Angular 7+, Bootstrap, JQuery, PWA</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="hiring-list mb-5">
+                                        <h3>Responsibilities</h3>
+                                        <p>Develop new user-facing features<br>
+                                            Build reusable code and libraries for future use<br>
+                                            Ensure the technical feasibility of UI/UX designs<br>
+                                            Optimize application for maximum speed and scalability<br>
+                                            Assure that all user input is validated before submitting to back-end<br>
+                                            Super responsive designs<br>
+                                            Angular 7+ must needed and at least 1 year of experience<br>
+                                            Collaborate with other team members
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="hiring-list mb-5">
+                                        <h3>Requirements</h3>
+                                        <p>Any graduate / post graduate in IT preferable MCA / Msc IT ME IT / M.Tech IT
+                                            / B.E. IT / B.E. Computer.</p>
+                                    </div>
+                                </div>
+                                 <div class="col-12"> 
+                                    <div class="hiring-bm">
+                                        <p>Wan to apply now?</p>
+                                        <hr>
+                                        <div class="contact-form">
+                                            <form action="javascript:;">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Name</label>
+                                                        <div class="form-group mb-4">
+                                                            <input type="text" placeholder="Enter Your Name"
+                                                                class="form-control">
+                                                            <i class="far fa-user"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label>Email</label>
+                                                        <div class="form-group mb-4">
+                                                            <input type="text" placeholder="Enter Your Email"
+                                                                class="form-control">
+                                                            <i class="far fa-envelope"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <label>Message</label>
+                                                        <div class="form-group mb-4">
+                                                            <textarea rows="6" class="form-control pl-3"
+                                                                placeholder="Write here…"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <label>CV Attachment</label>
+                                                        <div class="form-group file-select mb-4">
+                                                            <input type="file" id="fileInput"
+                                                                class="form-control p-0 file-input">
+                                                            <div class="file-browse">
+                                                                <a href="javascript:;" class="select-file">
+                                                                    <i class="fas fa-paperclip"></i>
+                                                                    <span>Select</span>
+                                                                    <div class="browser-btn">Browser</div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-12">
+                                                        <button
+                                                            class="theme-btn theme-btn bg-theme-yellow-btn mt-2">Send
+                                                            Message</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+</div>

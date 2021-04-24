@@ -1,0 +1,51 @@
+.banner-bg{
+    background-image: url(../../assets/technologies/technologies-banner.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 350px;
+}
+.page-banner-bg {
+    min-height: 400px;
+    position: relative;
+}
+.page-banner-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.page-banner-content h1 {
+    font-size: 44px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.circle-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #FFF0D9;
+    position: relative;
+    border-radius: 50%;
+}
+
+.owl-nav{
+    display: block !important;
+}
+
+.services-nameinfo h2 {
+    font-size: 34px;
+    font-weight: 600;
+    color: #14406D;
+    margin-bottom: 20px;
+}
+.services-nameinfo p {
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6C757D;
+}
+.services-listing .owl-theme .owl-dots, .owl-theme .owl-nav{
+    position: absolute;
+    top: -40px;
+    right: 20px;
+}

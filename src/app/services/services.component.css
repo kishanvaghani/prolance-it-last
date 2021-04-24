@@ -1,0 +1,23 @@
+.page-banner-bg {
+    min-height: 400px;
+    position: relative;
+    background: url(../../assets/services/services-banner.png);
+}
+.banner-bg {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 350px;
+}
+.page-banner-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.page-banner-content h1 {
+    font-size: 44px;
+    font-weight: 600;
+    color: #ffffff;
+}
+

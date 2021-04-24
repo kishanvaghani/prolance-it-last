@@ -1,0 +1,116 @@
+<div>
+    <div class="page-banner-bg banner-bg d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-banner-content">
+                        <h1>Contact Us</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <section class="section-space position-relative overflow-hidden">
+            <div class="pattern-part pattern-1" style="top:40px"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="contact-left-text mb-4 mb-lg-0">
+                            <h3>Don’t hesitate to <br> <span class="theme-t-yellow-clr">Contact us
+                                </span>
+                                <strong>for any information.</strong>
+                            </h3>
+                            <hr>
+                            <ul class="p-0">
+                                <li class="list-unstyled">
+                                    <a href="mailto:exelanceit@gmail.com" class="theme-t-yellow-clr">it.prolance@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="contact-form">
+                            <form action="javascript:;" class="needs-validation" novalidate [formGroup]="myForm" (ngSubmit)="saveForm(myForm)">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Name</label>
+                                        <div class="form-group mb-4">
+                                            <i class="far fa-user"></i>
+                                            <input type="text" placeholder="Enter Your Name" 
+                                            formControlName="name" 
+                                            autocomplete="false"
+                                            name="name" 
+                                            [ngClass]="{'red-border': getControl.name.errors}"
+                                            class="form-control">
+                                            <!-- <div *ngIf="getControl.name.touched && getControl.name.invalid" class="invalid-feedback d-block" >
+                                                <div *ngIf="getControl.name.errors.required">Name is required.</div>
+                                                <div *ngIf="getControl.name.errors?.minlength">Minimum 4 character are required.</div>
+                                              </div> -->
+                                              <span class="invalid-feedback" *ngIf="(myForm.get('name').touched || myForm.get('name').dirty) && myForm.get('name').invalid">
+                                                Name must be required
+                                            </span>
+                                        </div> 
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Email</label>
+                                        <div class="form-group mb-4">
+                                            <input type="text" placeholder="Enter Your Email" 
+                                            [ngClass]="{'red-border': getControl.email.errors}"
+                                            formControlName="email" class="form-control">
+                                            <i class="far fa-envelope"></i>
+                                                <div *ngIf="myForm.get('email').touched && myForm.get('email').invalid" class="text-danger">
+                                                    <div *ngIf="myForm.get('email').errors.required">Email is required.</div>
+                                                    <div *ngIf="myForm.get('email').errors.email">Please, enter valid email address.</div>
+                                                </div>
+                                        </div>  
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label>Message</label>
+                                        <div class="form-group mb-4">
+                                            <textarea rows="6" class="form-control pl-3" 
+                                            [ngClass]="{'red-border': getControl.message.errors}"
+                                            formControlName="message" placeholder="Write here…"></textarea>
+                                            <div *ngIf="myForm.get('message').touched && myForm.get('message').invalid" class="text-danger">
+                                                <div *ngIf="myForm.get('message').errors.required">TextArea is required.</div>
+                                                <div *ngIf="myForm.get('message').errors.email">Please, enter valid email address.</div>
+                                                <div *ngIf="getControl.message.errors?.minlength">Minimum 8 character are required.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <button class="theme-btn theme-btn bg-theme-yellow-btn mt-2" [ngClass]="{'opacity': !myForm.valid}" type="submit" [disabled]="!myForm.valid">Send
+                                            Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="curve-bg" style="bottom:-2px"><img src="../../assets/curve-1.svg" class="img-fluid" alt="">
+        </div>
+        <section class="reachUs-space light-bg position-relative">
+            <div class="pattern-part pattern-2" style="top: 35%;"></div>
+            <div class="container">
+                <div class="section-title text-center mb-5 wow fadeInUp">
+                    <h2>Reach <span>Us</span></h2>
+                </div>
+                <div class="map-address text-center">
+                    <span class="d-block">
+                        <img src="../../assets/contact/pin.svg" alt="">
+                    </span>
+                    <p>Jay Shree Building, 2nd Floor, 34,35,36 Nandeshwari
+                        Society, Nr. Vasant Bhikha ni Wadi, L.H. Road, Surat,
+                        Gujarat 395006</p>
+                </div>
+                <div class="map_area">
+                    <iframe class="frame" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=100%25&amp;hl=en&amp;q=ProLance%20IT%20Surat&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

@@ -1,0 +1,165 @@
+.banner-bg {
+    background: url(../../../assets/testo/testimonials-banner.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 350px;
+}
+.page-banner-bg {
+    min-height: 400px;
+    position: relative;
+}
+.page-banner-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.page-banner-content h1 {
+    font-size: 44px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.page-banner-content .breadcrumb {
+    background: none;
+    padding: 0;
+    justify-content: center;
+}
+.page-banner-content .breadcrumb li {
+    color: #FE9801 !important;
+}
+a {
+    color: #FE9801;
+    text-decoration: none;
+}
+.page-banner-content .breadcrumb-item+.breadcrumb-item::before {
+    color: #FE9801;
+    content: ">";
+    vertical-align: middle;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: "/";
+}
+.section-space {
+    padding: 70px 0;
+}
+.section-title {
+    margin-bottom: 110px;
+}
+.section-title h2 {
+    font-size: 40px;
+    color: #14406D;
+    font-weight: 600;
+}
+.section-title h2 span {
+    display: inline-block;
+    color: #FE9801;
+}
+.about-content h3 {
+    font-size: 34px;
+    color: #14406D;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.theme-t-yellow-clr {
+    color: #FE9801 !important;
+}
+.about-content p {
+    margin-bottom: 18px;
+}
+.industries-content li {
+    color: #6C757D;
+    position: relative;
+    padding-left: 30px;
+    margin-top: 5px;
+}
+.industries-content li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../../../assets/about-us/checkmark.svg) no-repeat 0 0;
+    width: 16px;
+    height: 15px;
+}
+.business-contact {
+    /* background-image: none; */
+    position: relative;
+    z-index: 0;
+    background-attachment: scroll;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-image: url('../../../assets/business-contact.png'); 
+
+    min-height: 520px;
+}
+.business-contact h2 {
+    font-size: 48px;
+    color: #14406D;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.business-contact h6 {
+    font-size: 24px;
+    color: #14406D;
+    font-weight: 400;
+    margin-bottom: 12px;
+    
+}
+.theme-btn.bg-theme-yellow-btn {
+    background: #FE9801;
+    border-color: #FE9801;
+    color: #fff;
+}
+.theme-btn {
+    font-size: 15px;
+    font-weight: 500;
+    color: #14406D;
+    border: 1px solid #14406D;
+    border-radius: 0px 16px;
+    padding: 10px 20px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+#jarallax-container-0 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: -100;
+    clip: rect(0 1519.2000732421875px 520px 0);
+    clip: rect(0, 1519.2000732421875px, 520px, 0);
+}
+.bg{
+    background-position: 50% 50%; 
+    background-size: 100%; 
+    background-repeat: no-repeat; 
+    background-image: url('../../../assets/business-contact.png'); 
+    position: fixed; 
+    top: 0px; 
+    left: 0px; 
+    width: 2214.65px; 
+    height: 650.8px; 
+    overflow: hidden; 
+    pointer-events: none; 
+    margin-left: -727.723px; 
+    margin-top: -96.9px; 
+    visibility: visible; 
+    animation: flow;
+    transform: translateY(185px) translateZ(0px)
+}
+@keyframes flow{
+    from {transform: translateY(180.574px) translateZ(0px);}
+    to {transform: translateY(-180.506px) translateX(0px);}
+
+}
